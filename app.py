@@ -95,4 +95,6 @@ if __name__ == '__main__':
   
   app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 server = app.server  # This is what Gunicorn needs
+web: gunicorn app:server
+
 
